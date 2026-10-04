@@ -518,13 +518,7 @@ const App = () => {
                     {service.description}
                   </p>
 
-                  <div className="relative mt-7 flex items-center gap-2 text-sm font-bold text-slate-400 transition group-hover:text-red-500">
-                    Learn more
-                    <ArrowRight
-                      size={16}
-                      className="transition group-hover:translate-x-1"
-                    />
-                  </div>
+                  
                 </motion.div>
               );
             })}
@@ -719,7 +713,7 @@ const App = () => {
                     className="mt-2 inline-flex items-center gap-3 text-2xl font-black"
                   >
                     <Phone size={23} />
-                    Call 108
+                    Call +919934000724
                   </a>
                 </div>
               </div>
