@@ -89,6 +89,8 @@ const App = () => {
     });
   };
 
+  const API_URL = import.meta.env.VITE_API_URL;
+
   const handleRequest = async (e) => {
     e.preventDefault();
 
@@ -96,7 +98,7 @@ const App = () => {
     setStatus("");
 
     try {
-      await axios.post("http://localhost:5000/api/emergency", formData);
+      await axios.post(`${API_URL}/api/emergency`, formData);
 
       setStatus("success");
 
@@ -517,8 +519,6 @@ const App = () => {
                   <p className="relative mt-3 leading-7 text-slate-500">
                     {service.description}
                   </p>
-
-                  
                 </motion.div>
               );
             })}
