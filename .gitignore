@@ -1,6 +1,9 @@
 Backend/node_modules
 navi-heart-backend/node_modules
 
+Backend/.env
+navi-heart-backend/.env
+
 node_modules/
 .env
 .env.*
